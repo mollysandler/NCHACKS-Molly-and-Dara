@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="hangman.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <a href = "games.html"><button>Return to Games!</button></a>
+
+  <body>
+
+      <div id="left">
+        <h1>Hangman:<br>Holiday Stuff :)</h1>
+
+        <p>
+          <em>How to play:</em> Click one of the buttons below to select your category, The answer will be a holiday food, dessert, or drink! Ready to play? Click below. 
+        </p>
+
+        <p>
+          <span id="lives"><em>Lives Left:</em></span>
+        </p>
+
+        <h3> 
+          Guess: <span id="choose"></span>
+        </h3>
+
+        <input type="button" id="QuitGame" value="Quit Game" onclick="QuitGame()"></input>
+
+        <br><br>
+
+        <span>Select a Category to Begin a New Game:</span>
+        <input type="button" id="holidaydesserts" value="Holiday Desserts!"></input>
+
+        <input type="button" id="holidaydrinks" value="Holiday Drinks!"></input>
+
+        <input type="button" id="holidayfoods" value="Holiday Foods!"></input>
+
+        <br><br>
+
+        <div id="unusedAlpha">
+          <input type="button" id="Aa" value="A" onclick="buttonClicked('Aa')"></input>
+          <input type="button" id="Bb" value="B" onclick="buttonClicked('Bb')"></input>
+          <input type="button" id="Cc" value="C" onclick="buttonClicked('Cc')"></input>
+          <input type="button" id="Dd" value="D" onclick="buttonClicked('Dd')"></input>
+          <input type="button" id="Ee" value="E" onclick="buttonClicked('Ee')"></input>
+          <input type="button" id="Ff" value="F" onclick="buttonClicked('Ff')"></input>
+          <input type="button" id="Gg" value="G" onclick="buttonClicked('Gg')"></input>
+          <input type="button" id="Hh" value="H" onclick="buttonClicked('Hh')"></input>
+          <input type="button" id="Ii" value="I" onclick="buttonClicked('Ii')"></input>
+          <input type="button" id="Jj" value="J" onclick="buttonClicked('Jj')"></input>
+          <input type="button" id="Kk" value="K" onclick="buttonClicked('Kk')"></input>
+          <input type="button" id="Ll" value="L" onclick="buttonClicked('Ll')"></input>
+          <input type="button" id="Mm" value="M" onclick="buttonClicked('Mm')"></input>
+          <input type="button" id="Nn" value="N" onclick="buttonClicked('Nn')"></input>
+          <input type="button" id="Oo" value="O" onclick="buttonClicked('Oo')"></input>
+          <input type="button" id="Pp" value="P" onclick="buttonClicked('Pp')"></input>
+          <input type="button" id="Qq" value="Q" onclick="buttonClicked('Qq')"></input>
+          <input type="button" id="Rr" value="R" onclick="buttonClicked('Rr')"></input>
+          <input type="button" id="Ss" value="S" onclick="buttonClicked('Ss')"></input>
+          <input type="button" id="Tt" value="T" onclick="buttonClicked('Tt')"></input>
+          <input type="button" id="Uu" value="U" onclick="buttonClicked('Uu')"></input>
+          <input type="button" id="Vv" value="V" onclick="buttonClicked('Vv')"></input>
+          <input type="button" id="Ww" value="W" onclick="buttonClicked('Ww')"></input>
+          <input type="button" id="Xx" value="X" onclick="buttonClicked('Xx')"></input>
+          <input type="button" id="Yy" value="Y" onclick="buttonClicked('Yy')"></input>
+          <input type="button" id="Zz" value="Z" onclick="buttonClicked('Zz')"></input>
+        </div>
+        <br><br>
+        <span style="display:none;" id="answer">dddd</span>
+        <br><br>
+      </div>
+      
+      <div id="right">
+        <canvas id="HangmanDrawing">
+          
+        </canvas>
+      </div>
+
+    <script src="hangman.js"></script>
+  </body>
+</html>

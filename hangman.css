@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color:  rgb(211, 147, 236);
+  }
+  
+  #HangmanDrawing {
+    border: 1px solid darkslateblue;
+    width: 360px;
+    height: 360px;
+    text-align: center;
+  }
+  
